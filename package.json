@@ -17,6 +17,7 @@
   "dependencies": {
     "font-awesome-stylus": "^1.2.0",
     "grunt": "^0.4.5",
-    "kouto-swiss": "^0.11.8"
+    "kouto-swiss": "^0.11.8",
+    "nib": "^1.1.0"
   }
 }

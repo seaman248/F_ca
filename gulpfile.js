@@ -1,6 +1,7 @@
 var gulp = require('gulp'),
 	stylus = require('gulp-stylus'),
 	kouto = require('kouto-swiss'),
+	nib = require('nib'),
 	jade = require('gulp-jade'),
 	connect = require('gulp-connect');
 
@@ -15,7 +16,7 @@ gulp.task('connect', function(){
 gulp.task('styl', function(){
 	gulp.src('./src/styl/index.styl')
 		.pipe(stylus({
-			use: [kouto()],
+			use: [kouto(), nib()],
 			compress: true
 			}))
 		.pipe(gulp.dest('./dest/'))
