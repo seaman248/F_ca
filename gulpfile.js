@@ -5,6 +5,8 @@ var gulp = require('gulp'),
 	jade = require('gulp-jade'),
 	connect = require('gulp-connect');
 
+var img = require('gulp-imagemin');
+
 gulp.task('connect', function(){
 	connect.server({
 		root: 'dest',
@@ -30,6 +32,15 @@ gulp.task('html', function(){
 		}))
 		.pipe(gulp.dest('./dest/'))
 		.pipe(connect.reload());
+});
+
+gulp.task('img', function(){
+	var imgPath = './src/img/**/*';
+	gulp.src(imgPath)
+		.pipe(img({
+			progressive: true
+			}))
+		.pipe(gulp.dest('./dest/img/'));
 });
 
 gulp.task('watch', function(){

@@ -1,0 +1,56 @@
+header
+	position fixed
+	z-index 100
+	background-color #fff
+	box-shadow 0 0 10px rgba(0,0,0,0.12)
+	width 100%
+	height auto
+
+	._container
+		gs('fluid', 12)
+		padding 0 em(20)
+	.logo
+		col(6)
+		float left
+		img
+			max-width 100%
+			height em(88)
+
+	.mobile-menu-button
+		col(6)
+		height em(88)
+		button
+			float right
+			font-size em(42)
+			border none
+			width em(40)
+			height 100%
+			background-color transparent
+			color GREY
+			outline 0
+		button.active
+			color RED
+
+	ul._navbar
+		position absolute
+		top em(92)
+		margin 0
+		min-width 80%
+		list-style-type none
+		li
+			display block
+			transition background-color 0.2s ease-out 0.2s
+		li.active
+			border-top 4px solid RED
+			background-color #FCFCFC
+			transition border-top 0.2s ease-out 0.1s
+		li:hover
+			background-color #FCFCFC
+		a
+			margin em(5)
+			display block
+			text-decoration none
+			font-size em(19)
+			line-height 3
+			font-weight 300
+			color GREY
