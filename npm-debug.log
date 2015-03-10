@@ -1,0 +1,89 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'i', '--save', 'kuoto-swiss' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.36
+4 verbose node symlink /usr/bin/node
+5 warn package.json jQuery_Scroll@1.0.0 No description
+6 warn package.json jQuery_Scroll@1.0.0 No repository field.
+7 warn package.json jQuery_Scroll@1.0.0 No README data
+8 warn package.json font-awesome-stylus@1.2.0 No repository field.
+9 verbose readDependencies using package.json deps
+10 verbose cache add [ 'kuoto-swiss', null ]
+11 verbose cache add name=undefined spec="kuoto-swiss" args=["kuoto-swiss",null]
+12 verbose parsed url { protocol: null,
+12 verbose parsed url   slashes: null,
+12 verbose parsed url   auth: null,
+12 verbose parsed url   host: null,
+12 verbose parsed url   port: null,
+12 verbose parsed url   hostname: null,
+12 verbose parsed url   hash: null,
+12 verbose parsed url   search: null,
+12 verbose parsed url   query: null,
+12 verbose parsed url   pathname: 'kuoto-swiss',
+12 verbose parsed url   path: 'kuoto-swiss',
+12 verbose parsed url   href: 'kuoto-swiss' }
+13 silly lockFile 5433f5b8-kuoto-swiss kuoto-swiss
+14 verbose lock kuoto-swiss /home/seaman/.npm/5433f5b8-kuoto-swiss.lock
+15 silly lockFile 5433f5b8-kuoto-swiss kuoto-swiss
+16 silly lockFile 5433f5b8-kuoto-swiss kuoto-swiss
+17 verbose addNamed [ 'kuoto-swiss', '' ]
+18 verbose addNamed [ null, '*' ]
+19 silly lockFile dd899b51-kuoto-swiss kuoto-swiss@
+20 verbose lock kuoto-swiss@ /home/seaman/.npm/dd899b51-kuoto-swiss.lock
+21 silly addNameRange { name: 'kuoto-swiss', range: '*', hasData: false }
+22 verbose request where is /kuoto-swiss
+23 verbose request registry https://registry.npmjs.org/
+24 verbose request id 083519b32335b7a3
+25 verbose url raw /kuoto-swiss
+26 verbose url resolving [ 'https://registry.npmjs.org/', './kuoto-swiss' ]
+27 verbose url resolved https://registry.npmjs.org/kuoto-swiss
+28 verbose request where is https://registry.npmjs.org/kuoto-swiss
+29 info trying registry request attempt 1 at 15:56:51
+30 http GET https://registry.npmjs.org/kuoto-swiss
+31 http 404 https://registry.npmjs.org/kuoto-swiss
+32 verbose headers { date: 'Tue, 10 Mar 2015 12:56:58 GMT',
+32 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+32 verbose headers   'content-type': 'application/json',
+32 verbose headers   'cache-control': 'max-age=0',
+32 verbose headers   'content-length': '52',
+32 verbose headers   'accept-ranges': 'bytes',
+32 verbose headers   via: '1.1 varnish',
+32 verbose headers   age: '0',
+32 verbose headers   'x-served-by': 'cache-fra1240-FRA',
+32 verbose headers   'x-cache': 'MISS',
+32 verbose headers   'x-cache-hits': '0',
+32 verbose headers   'x-timer': 'S1425992211.675106,VS0,VE6388',
+32 verbose headers   'keep-alive': 'timeout=10, max=50',
+32 verbose headers   connection: 'Keep-Alive' }
+33 silly registry.get cb [ 404,
+33 silly registry.get   { date: 'Tue, 10 Mar 2015 12:56:58 GMT',
+33 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+33 silly registry.get     'content-type': 'application/json',
+33 silly registry.get     'cache-control': 'max-age=0',
+33 silly registry.get     'content-length': '52',
+33 silly registry.get     'accept-ranges': 'bytes',
+33 silly registry.get     via: '1.1 varnish',
+33 silly registry.get     age: '0',
+33 silly registry.get     'x-served-by': 'cache-fra1240-FRA',
+33 silly registry.get     'x-cache': 'MISS',
+33 silly registry.get     'x-cache-hits': '0',
+33 silly registry.get     'x-timer': 'S1425992211.675106,VS0,VE6388',
+33 silly registry.get     'keep-alive': 'timeout=10, max=50',
+33 silly registry.get     connection: 'Keep-Alive' } ]
+34 silly lockFile dd899b51-kuoto-swiss kuoto-swiss@
+35 silly lockFile dd899b51-kuoto-swiss kuoto-swiss@
+36 error 404 404 Not Found: kuoto-swiss
+36 error 404
+36 error 404 'kuoto-swiss' is not in the npm registry.
+36 error 404 You should bug the author to publish it
+36 error 404 It was specified as a dependency of 'jQuery_Scroll'
+36 error 404
+36 error 404 Note that you can also install from a
+36 error 404 tarball, folder, or http url, or git url.
+37 error System Linux 3.13.0-43-generic
+38 error command "/usr/bin/node" "/usr/bin/npm" "i" "--save" "kuoto-swiss"
+39 error cwd /home/seaman/prog/land/jQuery_Scroll
+40 error node -v v0.10.36
+41 error npm -v 1.4.28
+42 error code E404
+43 verbose exit [ 1, true ]
