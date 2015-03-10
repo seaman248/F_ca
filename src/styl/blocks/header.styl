@@ -18,6 +18,7 @@ header
 
 	.mobile-menu-button
 		col(6)
+		line-height 0
 		height em(88)
 		button
 			float right
@@ -35,15 +36,14 @@ header
 		position absolute
 		top em(92)
 		margin 0
-		min-width 80%
+		width 80%
 		list-style-type none
 		li
-			display block
 			transition background-color 0.2s ease-out 0.2s
+			transition border-top-width 0.2s ease-in 0.2s
 		li.active
 			border-top 4px solid RED
 			background-color #FCFCFC
-			transition border-top 0.2s ease-out 0.1s
 		li:hover
 			background-color #FCFCFC
 		a
@@ -54,3 +54,24 @@ header
 			line-height 3
 			font-weight 300
 			color GREY
+
++media-query( all, min-width 960px )
+	header
+		._container
+			gs('fixed')
+			padding 0
+		.mobile-menu-button
+			display none
+		.logo
+			col(3)
+		ul._navbar
+			position relative
+			min-width 0
+			top 0
+			col(8)
+			float right
+			li
+				display inline-block
+				padding em(10)
+			li:hover
+				border-top 4px solid RED
