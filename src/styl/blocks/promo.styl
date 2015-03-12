@@ -14,7 +14,6 @@
 			font-weight 300
 			text-transform uppercase
 			line-height 1
-			padding em(20) 0 0
 		p
 			font-size em(15)
 			font-weight 300
@@ -40,3 +39,15 @@
 			border none
 			text-transform uppercase
 			padding em(5) em(30)
+
++media-query( all, min-width 960px )
+	.promo
+		background-position top center
+		._container
+			gs('fixed')
+		.banner
+			col(6)
+			input
+				width 70%
+			button
+				padding em(10) em(40)
