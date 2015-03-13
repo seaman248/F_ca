@@ -4,9 +4,21 @@
 RED = #f15a5a
 BLUE = #2e90b8
 GREY = #8c8c8c
-
+BLACK = #3c3c3c
 // GLOBAL
 normalize()
+
+
+h1.block_header::before
+	content "— "
+h1.block_header
+	font-weight 300
+	font-size em(24)
+	text-transform uppercase
+	text-align center
+	color BLACK
+h1.block_header::after
+	content " —"
 
 body
 	font-family 'Open Sans', sans-serif
