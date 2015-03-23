@@ -6,9 +6,18 @@ head
 	|<link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,300,400,500,700,900" rel="stylesheet">
 	link(rel="stylesheet", type="text/css", href="index.css")
 	link(rel="stylesheet", href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css")
+	//- jQuery including
 	script
 		include ./g_scripts/jquery/dist/jquery.min.js
 		include ./g_scripts/jquery/dist/jquery.min.map
+	//- Carousel script and styles
+	style
+		include ./g_scripts/slick.js/slick/slick.css
+	script
+		include ./g_scripts/slick.js/slick/slick.min.js
+	//- Main script
+	script 
+		include ./main.js
 body
 	include ./blocks/header.jade
 	include ./blocks/promo.jade
