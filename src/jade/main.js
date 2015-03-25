@@ -8,6 +8,9 @@ $(document).ready(function(){
 	// magnificPopup
 	$('.product .galary').magnificPopup({
 		delegate: 'a',
-		type: 'image'
+		type: 'image',
+		gallery:{
+			enabled:true
+		}
 	});
 });
