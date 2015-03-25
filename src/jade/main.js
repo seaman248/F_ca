@@ -1,7 +1,13 @@
 // main.js
-
-// carousel
-$('.carousel').slick({
-	dots: false,
-	speed: 500
-})
+$(document).ready(function(){
+	// carousel
+	$('.carousel').slick({
+		dots: false,
+		speed: 500
+	})
+	// magnificPopup
+	$('.product .galary').magnificPopup({
+		delegate: 'a',
+		type: 'image'
+	});
+});
