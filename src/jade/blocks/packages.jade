@@ -1,6 +1,5 @@
-.packages
-	h1.block_header Choose your packages
-	.package.basic
+mixin package(className)
+	.package(class=className)
 		h4 Basic
 		h5 29
 			span.cent 99
@@ -10,3 +9,14 @@
 			li Up to 100 users
 			li 10 Gb bandwidth
 		button(type="button") Select plan
+
+
+
+
+
+.packages
+	h1.block_header Choose your packages
+	+package('basic')
+	+package('standart')
+	+package('advanced')
+	+package('maxi')
