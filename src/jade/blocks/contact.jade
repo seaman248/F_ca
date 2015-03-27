@@ -1,9 +1,14 @@
 mixin contactWay(fa_icon, contactWayHeader, contactWayDescription)
 	.contactWay
-		.fa(class=fa_icon)
+		i.fa(class=fa_icon)
 		h5.CWHeader #{contactWayHeader}
 		p #{contactWayDescription}
 
 
 .contact
 	h1.block_header where you can find us
+	+contactWay('fa-map-marker', 'Office location', 'Russia, MO, Puchino')
+	+contactWay('fa-mobile', 'Call us', '8-925-526-2702')
+	+contactWay('fa-envelope-o', 'Email', 'semen.bko@ya.ru')
+	+contactWay('fa-clock-o', 'Working hours', 'Monday-Sunday 12:00 - 21:00')
+
