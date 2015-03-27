@@ -13,8 +13,19 @@
 			font-size em(22)
 			margin em(20) 0 0
 		p
-			font-size em(18)
+			font-size em(15)
 			color GREY
 			font-weight 300
 			margin em(10) auto
 			width 80%
++media-query( all, min-width 960px )
+	.contact
+		gs('fixed')
+		.contactWay
+			col(3)
+			padding-top em(40)
+			padding-bottom em(40)
+			transition background-color 0.18s ease-out 0.1s
+		.contactWay:hover
+			background-color #F9F9F9
+			cursor pointer
